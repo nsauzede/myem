@@ -1,8 +1,12 @@
+# myem
+
+Experiments with cpu emulator
 
 To build, first install vade :
 https://github.com/nsauzede/vade
 
-then :
+Then :
+```
 myem$ vade clean ; vade build ; vade test
 	RM	pkg
 	RM	bin
@@ -12,4 +16,4 @@ myem$ vade clean ; vade build ; vade test
 	CXX	myem.exe
 	RUN	./bin/myem.exe
 hello myem
-
+```
