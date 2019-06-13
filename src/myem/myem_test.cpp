@@ -3,12 +3,10 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#include <stdio.h>
-
 #include "myem.h"
 #include "testing/testing.h"
 
 void myem_TestMyem(void *t) {
-	printf("%s: t=%p\n", __func__, t);
+	testing_Logf(t, "Testing MyEm..\n");
 	MyEm m;
 }
