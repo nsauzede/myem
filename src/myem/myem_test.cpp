@@ -6,7 +6,9 @@
 #include <stdio.h>
 
 #include "myem.h"
+#include "testing/testing.h"
 
-MyEm::MyEm() {
-	printf("hello myem\n");
+void myem_TestMyem(void *t) {
+	printf("%s: t=%p\n", __func__, t);
+	MyEm m;
 }
