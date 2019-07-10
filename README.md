@@ -7,7 +7,7 @@ https://github.com/nsauzede/vade
 
 Then :
 ```
-myem$ vade clean ; vade build ; vade test
+myem$ vade test
 	RM	pkg
 	RM	bin
 	CXX	myem.d
