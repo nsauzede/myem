@@ -6,7 +6,13 @@
 #include <string>
 
 class MyEm {
+private:
+//	std_vector<unsigned char> m_bios;
+	unsigned char *m_bios;
+	unsigned long m_bios_size;
 public:
 	MyEm();
+	~MyEm();
 	void Load(const std::string& config);
+	void Run();
 };

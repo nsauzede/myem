@@ -11,4 +11,6 @@ void myem_TestMyem(void *t) {
 	MyEm m;
 	testing_Logf(t, "Testing MyEm config..\n");
 	m.Load("{\"bios\":\"bios\"}");
+	testing_Logf(t, "Testing MyEm run..\n");
+	m.Run();
 }
