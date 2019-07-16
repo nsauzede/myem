@@ -9,7 +9,10 @@ class MyEm {
 private:
 //	std_vector<unsigned char> m_bios;
 	unsigned char *m_bios;
-	unsigned long m_bios_size;
+	uint32_t m_bios_size;
+	uint32_t m_bios_start;
+	uint16_t m_cs;
+	uint16_t m_ip;
 public:
 	MyEm();
 	~MyEm();
