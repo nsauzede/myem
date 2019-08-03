@@ -3,19 +3,28 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
+#ifndef MYEM_H_
+#define MYEM_H_
+
 #include <string>
 
+#include "bus/bus.h"
+#include "mem/mem.h"
+#include "cpu/cpu.h"
+
 class MyEm {
-private:
-//	std_vector<unsigned char> m_bios;
-	unsigned char *m_bios;
-	uint32_t m_bios_size;
-	uint32_t m_bios_start;
-	uint16_t m_cs;
-	uint16_t m_ip;
-public:
-	MyEm();
-	~MyEm();
-	void Load(const std::string& config);
-	void Run();
+ private:
+        uint32_t m_bios_size;
+        uint32_t m_bios_start;
+        Bus m_bus;
+        Cpu m_cpu;
+        Mem m_rom;
+
+ public:
+        MyEm();
+        ~MyEm();
+        void Load(const std::string& config);
+        void Run();
 };
+
+#endif/*MYEM_H_*/
