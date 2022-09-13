@@ -38,6 +38,7 @@ uint32_t BusSlave::GetStart() const {
 }
 
 uint8_t BusSlave::Read8(uint32_t offs) const {
+        offs = offs;
         return 0xff;
 }
 
