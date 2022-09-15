@@ -6,11 +6,11 @@
 #include "myem/myem.h"
 #include "testing/testing.h"
 
-void myem_TestMyem(void *t) {
-	testing_Logf(t, "Testing MyEm..\n");
+TEST_F(myem, Myem) {
+	TEST_LOG("Testing MyEm..\n");
 	MyEm m;
-	testing_Logf(t, "Testing MyEm config..\n");
+	TEST_LOG("Testing MyEm config..\n");
 	m.Load("{\"bios\":\"bios.bin\"}");
-	testing_Logf(t, "Testing MyEm run..\n");
+	TEST_LOG("Testing MyEm run..\n");
 	m.Run();
 }
