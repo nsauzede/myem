@@ -4,7 +4,7 @@
  */
 
 #include "myem/myem.h"
-#include "testing/testing.h"
+#include "test/test.h"
 
 TEST_F(myem, Myem) {
 	TEST_LOG("Testing MyEm..\n");
