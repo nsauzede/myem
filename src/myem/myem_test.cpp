@@ -10,7 +10,7 @@ TEST_F(myem, Myem) {
 	TEST_LOG("Testing MyEm..\n");
 	MyEm m;
 	TEST_LOG("Testing MyEm config..\n");
-	m.Load("{\"bios\":\"bios.bin\"}");
+	m.Load("{\"bios\":\"pkg/myem/bios.bin\"}");
 	TEST_LOG("Testing MyEm run..\n");
 	m.Run();
 }
