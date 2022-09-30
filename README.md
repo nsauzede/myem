@@ -3,7 +3,7 @@
 Experiments with cpu emulator
 
 To build, first install vade :
-https://github.com/nsauzede/vade
+https://github.com/nsauzede/ns_vade
 
 To test, first get some BIOS, eg:
 ```
