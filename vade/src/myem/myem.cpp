@@ -33,7 +33,7 @@ void MyEm::Run() {
         }
 }
 
-void MyEm::Load(const std::string& config) {
+int MyEm::Load(const std::string& config) {
         printf("loading config %s..\n", config.c_str());
         auto j = json::parse(config);
         printf("j=%s\n", j.dump().c_str());
@@ -45,8 +45,9 @@ void MyEm::Load(const std::string& config) {
                 m_bios_start = 0x100000 - m_bios_size;
                 m_rom.Bind(m_bios_start, m_bios_start + m_bios_size);
                 m_bus.BindSlave(m_rom);
+                return 0;
         } else {
                 printf("can't open bios (%s)\n", bios.c_str());
-                exit(0);
+                return 1;
         }
 }

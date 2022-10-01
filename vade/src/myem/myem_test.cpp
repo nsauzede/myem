@@ -10,7 +10,9 @@ TEST_F(myem, Myem) {
 	TEST_LOG("Testing MyEm..\n");
 	MyEm m;
 	TEST_LOG("Testing MyEm config..\n");
-	m.Load("{\"bios\":\"vade/pkg/myem/bios.bin\"}");
+	if (m.Load("{\"bios\":\"bios.bin\"}")) {
+		EXPECT_EQ(0, m.Load("{\"bios\":\"vade/pkg/myem/bios.bin\"}"));
+	}
 	TEST_LOG("Testing MyEm run..\n");
 	m.Run();
 }

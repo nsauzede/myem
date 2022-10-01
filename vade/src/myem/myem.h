@@ -23,7 +23,7 @@ class MyEm {
  public:
         MyEm();
         ~MyEm();
-        void Load(const std::string& config);
+        int Load(const std::string& config);
         void Run();
 };
 
