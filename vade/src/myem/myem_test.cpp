@@ -16,3 +16,7 @@ TEST_F(myem, Myem) {
 	TEST_LOG("Testing MyEm run..\n");
 	m.Run();
 }
+
+TEST_F(myem, Myem0) {
+	EXPECT_EQ(0, 42);
+}
