@@ -58,4 +58,4 @@ bye myem
 ```
 
 [WorkflowBadge]: https://github.com/nsauzede/myem/actions/workflows/vade.yml/badge.svg
-[WorkflowUrl]: https://github.com/nsauzede/myem/commits/master
+[WorkflowUrl]: https://github.com/nsauzede/myem/commits/main
