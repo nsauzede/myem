@@ -1,4 +1,5 @@
 # myem
+[![Build Status][WorkflowBadge]][WorkflowUrl]
 
 Experiments with cpu emulator
 
@@ -55,3 +56,6 @@ DS=0000 ES=0000 CS=f000 IP=e05c
 bye
 bye myem
 ```
+
+[WorkflowBadge]: https://github.com/nsauzede/myem/actions/workflows/vade.yml/badge.svg
+[WorkflowUrl]: https://github.com/nsauzede/myem/commits/master
